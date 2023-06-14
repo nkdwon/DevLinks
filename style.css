@@ -35,6 +35,7 @@ body {
   */
   /* Short-Hand - Atalho */
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -171,4 +172,14 @@ footer{
 footer span{
   text-decoration: underline;
   color: rgba(184, 86, 184, 0.582);
+}
+
+@media (min-width: 700px){
+  :root {
+    --bg-url: url(./assets/bg-desktop.jpg)
+  }
+
+  .light {
+    --bg-url: url(./assets/bg-desktop-light.jpg)
+  }
 }
